@@ -1,0 +1,10 @@
+.cabecalho {
+  height: 100px;
+  padding: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.formulario, .tabela, .imagem-principal{
+  padding: 20px 0;
+}

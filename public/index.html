@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Studium</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+
+    <header class="container-lg cabecalho">
+      <ul class="nav nav-pills justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Perfil</a>
+        </li>
+      </ul>
+    </header>
+    <main class="container-lg">
+
+      <!--IMGAGEM-->
+      <img src="homepage1.jpg" class="img-fluid imagem-principal" alt="Home Page">
+      <!--IMAGEM FIM-->
+
+      <!--TABELA INICIO-->
+      <table class="table table-hover tabela">
+        <thead class="thead-dark">
+          <tr>
+            <th>Disciplina</th>
+            <th>Atividade</th>
+            <th>Peso</th>
+            <th>Resultado</th>
+            <th>Status</th>
+            <th>Vencimento</th>
+            <th>Selecionar</th>
+          </tr>
+        </thead>
+        <tbody id="tabela">
+          <tr>
+            <td>Banco de Dados</td>
+            <td>Aula 1</td>
+            <td>-</td>
+            <td>-</td>
+            <td>CONCLUÍDO</td>
+            <td>21/3</td>
+            <td><input type="checkbox" name="selecao-atividade" value=""></td>
+          </tr>
+
+          <tr>
+            <td>Banco de Dados</td>
+            <td>Aula 2</td>
+            <td>-</td>
+            <td>-</td>
+            <td>CONCLUÍDO</td>
+            <td>28/3</td>
+            <td><input type="checkbox" name="selecao-atividade" value=""></td>
+          </tr>
+
+          <tr>
+            <td>Banco de Dados</td>
+            <td>Aula 3</td>
+            <td>-</td>
+            <td>-</td>
+            <td>BAIXADO</td>
+            <td>4/4</td>
+            <td><input type="checkbox" name="selecao-atividade" value=""></td>
+          </tr>
+
+          <tr>
+            <td>Banco de Dados</td>
+            <td>Fórum 1</td>
+            <td>1000</td>
+            <td>-</td>
+            <td>VENCENDO</td>
+            <td>6/4</td>
+            <td><input type="checkbox" name="selecao-atividade" value=""></td>
+          </tr>
+
+          <tr>
+            <td>Banco de Dados</td>
+            <td>Aula 4</td>
+            <td>-</td>
+            <td>-</td>
+            <td>INDISPONÍVEL</td>
+            <td>11/4</td>
+            <td><input type="checkbox" name="selecao-atividade" value=""></td>
+          </tr>
+
+          <tr>
+            <td>Banco de Dados</td>
+            <td>Avaliação 1</td>
+            <td>750</td>
+            <td>-</td>
+            <td>DISPONÍVEL</td>
+            <td>13/4</td>
+            <td><input type="checkbox" name="selecao-atividade" value=""></td>
+          </tr>
+
+          <tr>
+            <td>Banco de Dados</td>
+            <td>Prova</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>13/4</td>
+            <td><input type="checkbox" name="selecao-atividade" value=""></td>
+          </tr>
+
+          <tr>
+            <td>Banco de Dados</td>
+            <td>Avaliação 2</td>
+            <td>750</td>
+            <td>-</td>
+            <td>DISPONÍVEL</td>
+            <td>20/4</td>
+            <td><input type="checkbox" name="selecao-atividade" value=""></td>
+          </tr>
+
+
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+      </table>
+      <!--TABELA FIM-->
+
+      <!--FORMULARIO INICIO-->
+      <form class="container-sm justify-content-center formulario" id="form-adicionar" action="index.html" method="post">
+
+        <div class="form-group">
+          <label for="nome-disciplina">Disciplina</label>
+          <input type="text" class="form-control" name="disciplina">
+        </div>
+
+        <div class="form-group">
+          <label for="info-atividade">Atividade</label>
+          <input type="text" class="form-control" name="atividade">
+        </div>
+
+        <div class="form-group">
+          <label for="info-peso">Peso</label>
+          <input type="text" class="form-control" name="peso">
+        </div>
+
+        <div class="form-group">
+          <label for="info-resultado">Resultado</label>
+          <input type="text" class="form-control" name="resultado">
+        </div>
+
+        <div class="form-group">
+          <label for="info-vencimento">Vencimento</label>
+          <input type="date" class="form-control" name="vencimento">
+        </div>
+
+        <div class="form-group">
+          <button type="button" class="btn btn-success" id="botao-adicionar" name="adciona-atividade">Adcionar</button>
+        </div>
+
+      </form>
+      <!--FORMULARIO FIM-->
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/form.js" type="text/javascript">
+
+    </script>
+  </body>
+</html>
